@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  justify-content:space-between;
+  padding: 40px;
+  height: 90vh;
+}
+
+.logo {
+  border-radius: 20px;
+  object-fit: contain;
+  height: 90vh;
+  box-shadow: 0 0 15px 2px black;
+}
+
+.container {
+  width: 60%;
+}
+
+@media (max-width: 1500px) {
+  .main {
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 20px;
+    height: auto;
+    padding: 60px 10px;
+  }
+
+  .logo {
+    height: auto;
+    width: 100%;
+  }
+
+  .container {
+    width: auto;
+  }
+}

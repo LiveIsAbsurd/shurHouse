@@ -1,0 +1,44 @@
+.container {
+    height: 100%;
+    background-color: rgba(50, 35, 65, 0.228);
+    border-radius: 20px;
+    border: 1px solid white;
+    backdrop-filter: blur(4px);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.image {
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    color: black;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 25px;
+    height: 100%;
+    
+    padding: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+}
+
+.author {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+@media (max-width: 1500px) {
+    .text {
+        max-width: 100%;
+        font-size: 22px;
+    }
+}

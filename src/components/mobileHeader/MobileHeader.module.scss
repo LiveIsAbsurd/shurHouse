@@ -1,0 +1,31 @@
+.container {
+    display: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: Weight Bold;
+    font-style: "Regular";
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    padding: 10px 0;
+
+    background-color: rgba(0, 0, 0, 0.611);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    right: 0;
+
+    text-align: center;
+
+}
+
+.decor {
+    color: rgb(219, 103, 219);
+}
+
+@media (max-width: 1500px) {
+    .container {
+        display: block;
+    }
+}
