@@ -1,8 +1,8 @@
 import styles from "./MobileHeader.module.scss";
 
-const MobileHeader = () => {
+const MobileHeader = ({click}) => {
     return (
-        <div className={styles.container}>SHURSHUHA FEST <span className={styles.decor}>&</span> MEME HOUSE CHAT</div>
+        <div className={styles.container}>SHURSHUHA FEST <span onClick = {() => click()} className={styles.decor}>&</span> MEME HOUSE CHAT</div>
     )
 }
 

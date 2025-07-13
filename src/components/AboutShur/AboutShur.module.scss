@@ -36,9 +36,14 @@
     opacity: 0.5;
 }
 
+.tiket {
+    text-align: center;
+}
+
 @media (max-width: 1500px) {
     .text {
         max-width: 100%;
         font-size: 22px;
+        padding: 20px;
     }
 }

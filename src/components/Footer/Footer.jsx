@@ -15,13 +15,15 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles.container}>
                 {links.map((item, i) => {
-                    return <Link key={i} to={item.link}><img src={item.logo} className={styles.round}></img></Link>
+                    return <Link key={i} to={item.link} target="_blank" rel="noopener noreferrer" ><img src={item.logo} className={styles.round}></img></Link>
                 })}
             </div>
             <div>
                 <div className={styles.adress}><div>29 июля, 16:00</div> <div>Гостиница Луки-Сервис</div> г. Великие Луки</div>
-                <div className={styles.author}>created by <Link to="https://liveisabsurd.t.me" className={styles.tg}>@LiveIsAbsurd</Link></div>
-                <div className={styles.author}>designed by <Link to="https://yorigami.t.me" className={styles.tg}>@Yorigami</Link></div>
+                <div className={styles.author}>
+                    <div>created by <Link to="https://liveisabsurd.t.me" target="_blank" rel="noopener noreferrer"  className={styles.tg}>@LiveIsAbsurd</Link></div>
+                    <div>designed by <Link to="https://yorigami.t.me" target="_blank" rel="noopener noreferrer"  className={styles.tg}>@Yorigami</Link></div>
+                </div>
             </div>
         </div>
     )

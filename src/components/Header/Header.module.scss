@@ -39,8 +39,12 @@
     }
 }
 
-.select {
+.item.select {
     text-decoration: underline !important;
+    
+    &::before {
+        background-color: rgba(150, 99, 123, 0.499);
+    }
 }
 
 .adress {
@@ -68,6 +72,10 @@
                 display: none;
             }
         }
+    }
+
+    .select {
+        transform: translate(0);
     }
 
     .adress {

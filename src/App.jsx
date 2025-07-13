@@ -4,19 +4,31 @@ import MobileHeader from './components/mobileHeader';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutShur from './components/AboutShur';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import joke from './assets/joke.jpg';
+import {useState} from 'react';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
+  const [jokeState, setJokeState] = useState(false);
+
+  const jokeClick = (jokeState) => {
+    setJokeState(!jokeState)
+  }
+
   return (
     <BrowserRouter>
       <div className='main'>
-        <MobileHeader />
+        <MobileHeader click = {() => jokeClick(jokeState)} />
         <Header />
         <div className='container'>
           <Routes>
             <Route
               path="/"
-              element={<img className='logo' src={logo} />}
+              element={jokeState ?
+                 <div className='joke'>
+                  <img className='logo' src={joke} />
+                  </div> : 
+                 <img className='logo' src={logo} />}
             />
           </Routes>
           <Routes>

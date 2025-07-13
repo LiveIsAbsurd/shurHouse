@@ -16,6 +16,16 @@
   width: 60%;
 }
 
+.joke {
+  color: black;
+  text-align: center;
+  animation: anim 5s infinite linear;
+}
+
+.joke:hover {
+  animation: anim 1s infinite linear;
+}
+
 @media (max-width: 1500px) {
   .main {
     flex-direction: column;
@@ -32,5 +42,17 @@
 
   .container {
     width: auto;
+  }
+}
+
+@keyframes anim {
+  0% { 
+    transform: rotate(0deg) scale(100%); 
+  }
+  50% {
+    transform: rotate(180deg) scale(120%);
+  }
+  100% { 
+    transform: rotate(360deg) scale(100%); 
   }
 }
